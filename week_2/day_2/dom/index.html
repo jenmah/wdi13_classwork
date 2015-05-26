@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- <html>
+<head>
+  <title></title>
+</head>
+
+  <body id="body">
+    <div class="students">
+      <p class="students">Pedro</p>
+      <p class="students">Guillaume</p>
+      <p class="students">Nick</p>
+      <p class="students">Jim</p>
+      <p class="students">Dave</p>
+      <p class="students">Jen</p>
+      <p class="students">Zahn</p>
+      <p class="students">Erika</p>
+    </div>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style type="text/css">
+     body {
+       font: 76% normal verdana, arial, tahoma;
+     }
+    
+    h1, h2 {
+      font-size: 1em,
+    }
+    
+    #fooObject {
+      position: absolute;
+      left: 0px;
+      top: 8em;
+      width: 5em;
+      line-height: 3em;
+      background: '#99ccff';
+      border: 1px solid #003366;
+      white-space: nowrap;
+      padding: 0.5em;
+     }
+  </style>
+  <script>
+    var foo = null;
+     function doMove() {
+       foo.style.left = parseInt(foo.style.left)+1+'px';
+       setTimeout(doMove, 20);
+     }
+      function init() {
+        foo = document.getElementById('fooObject');
+        foo.style.left = '0px'; //set initial position to 0px on the left
+        doMove();
+      }
+    
+    window.onload = init
+    
+</head>
+<body>
+  <time id="clock">
+  </time>
+</body>
+</html>

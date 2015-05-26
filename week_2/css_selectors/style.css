@@ -1,0 +1,65 @@
+    p {
+      color: grey;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      color: rgba(169, 187, 64, 1);
+    }
+
+    h2 {
+      color: rgba(67, 80, 102, 1);
+    }
+
+  /*SELECT AN ELEMENT BY ITS CLASS*/
+  /*CLasses can be ued multiple times*/
+    .promo {
+      color: rgba(220, 254, 255, 1);
+      border-radius: 5px;
+    }
+
+    .promo:hover {
+      background-color: rgba(197, 221, 225, 0.5);
+
+    }
+
+  /*SELECT AN ELEMENT BY ITS ID*/
+  /*  IDs are unique and can ONLY be used once per page*/
+    #pencil-promo {
+      border: 1px grey;
+    }
+
+    #rubber-promo {
+      background-color: grey;
+    }
+    
+  /*these two below both do the same thing (change the stype of the span inside of the paragraph inside div class="promo")*/
+    .italic {
+      color: red;
+      font-size: 10px;
+      font-style: italic;
+    }
+
+    #rubber-promo span {
+      color: color: rgba(243, 171, 119, 1);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: aqua;
+    }
+
+/*PSEUDO COLLECTORS*/
+    .nav-links a:hover {
+      color: brown;
+    }
+
+    .nav-links a:visited {
+      color: purple;
+    }
+
+    .nav-links a:active {
+      color:pink;
+    }

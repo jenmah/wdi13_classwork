@@ -1,0 +1,5 @@
+require 'pry'
+# require_relative '../lib/main'
+require_relative '../lib/shelter'
+require_relative '../lib/animal'
+require_relative '../lib/client'

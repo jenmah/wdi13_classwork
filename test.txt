@@ -1,0 +1,5 @@
+I am making some changes.
+
+I am now happy with my changes. Ready to commit.
+
+Here's a bit more text.

@@ -1,0 +1,40 @@
+// TO MAKE TEXT FLASH DIFFERENT COLOURS
+
+
+
+// HTML Code -----------------------------------------
+
+<body
+   <ul>
+    <li class="disco">DISCO DISCO!</li>
+    <li class="disco">DISCO DISCO!</li>
+    <li class="disco">DISCO DISCO!</li>
+    <li class="disco">DISCO DISCO!</li>
+    <li class="disco">DISCO DISCO!</li>
+  </ul>
+</body>
+
+
+
+
+// JavaScript Code -----------------------------------------
+
+function randomColourValue() {
+    return Math.floor(Math.random() * 255);
+}
+
+function randomColour() {
+    var red = randomColourValue();
+    var green = randomColourValue();
+    var blue = randomColourValue();
+    
+    return 'rgb(' + red + ',' + blue + ',' + green + ')'; 
+}
+
+$(document).ready(function() {
+    disco = $('.disco').each(function(index, element) {
+        setInterval(function() {
+            $(element).css('color', randomColour());
+        }, 200)
+    });
+});

@@ -1,0 +1,175 @@
+// EXERCISE #1
+// Use forEach to loop through the array and output the following:
+// var foods = ["pizza", "tacos", "ice cream"];
+// The output should be
+// > "I like pizza"
+// > "I like tacos"
+// > "I like ice cream"
+
+// MY ANSWER
+// var foods = ["pizza", "tacos", "ice cream"];
+
+// foods.forEach(function(food) {
+//   console.log("I like " + food);
+// });
+
+
+// EXERCISE #2
+// User map to loop through the names, upcase them and reverse the characters in each string
+// var instructors = ['Jeremy', 'James', 'Lauren', 'Mathilda']
+//The output should be
+// ["YMEREJ", "SEMAJ", "NERUAL", "ADLIHTAM"]
+
+
+// MY ANSWER
+// var instructors = ['Jeremy', 'James', 'Lauren', 'Mathilda'];
+
+// var instructorNames = instructors.map(function(instructor) {
+//   return instructor.toUpperCase().split('').reverse().join('');
+// });
+
+// console.log(instructorNames);
+
+
+
+// EXERCISE #3
+// Find the mean of the numbers in the array to two decimal places;
+// var numbers = [7, 8,  3, 45,  67,   345,  23,  890, 675];
+
+// MY ANSWER
+// var numbers = [7, 8,  3, 45,  67,   345,  23,  890, 675];
+
+// var mean = [7, 8,  3, 45,  67,   345,  23,  890, 675].reduce(function(previousValue, currentValue, index, array) {
+//   return ((previousValue + currentValue) / numbers.length);
+// });
+
+// console.log(mean.toFixed(2));
+
+
+
+// MATHILDA'S ANSWER (may have been copied down wrong)
+// var numbers = [7, 8,  3, 45,  67,   345,  23,  890, 675];
+
+// var sum = numbers.reduce(function(previousValue, currentValue, index, array) {
+//   return previousValue + currentValue;
+// });
+
+// var result = (sum / numbers.length).toFixed(2);
+// console.log(sum.toFixed(2));
+
+
+
+
+
+// EXERCISE #4
+// Use an iterator to make seven calls to console.log to output the following triangle:
+//  #
+//  ##
+//  ###
+//  ####
+//  #####
+//  ######
+//  #######
+
+
+// MY ANSWER
+// var hashtags = ['#', '##', '###', '####', '#####', '######', '#######'];
+
+// hashtags.forEach(function(triangle) {
+//   console.log(triangle);
+// });
+
+
+// MATHILDA'S ANSWER
+// var hash = '#';
+// for(var i=0; i<7; i++) {
+//   console.log(hash);
+//   hash += '#';
+// }
+
+
+
+
+// EXERCISE #5
+// Filter the array to contain only the numbers bigger than 53. Double each number in the array and then sum every element in the array:
+// var numbers = [12, 5, 8, 130, 44];
+
+// MY ANSWER
+// var numbers = [12, 5, 8, 130, 44];
+
+// var biggerThanNumber = numbers.filter(function(number) {
+//   return number > 53;
+// });
+
+// console.log(biggerThanNumber);
+
+// var numbersDoubled = numbers.map(function(number) {
+//   return number * 2;
+// });
+
+// console.log(numbersDoubled);
+
+// var totalNums = numbersDoubled.reduce(function(initialNumber, currentNumber) {
+//   return initialNumber + currentNumber;
+// });
+
+// console.log(totalNums);
+
+
+
+
+// EXERCISE #6
+// Run through the code and return true if at least one element is true;
+// var numbers = [NaN, null, 0, undefined, '', -1];
+
+
+// MY ANSWER
+// var numbers = [NaN, null, 0, undefined, '', -1];
+
+// function trueNumbers(numbers) {
+//   if (numbers[0] || numbers[1] || numbers[2] || numbers[3] || numbers[5]) === true {
+//     return true;
+//   }
+// }
+
+// console.log(trueNumbers);
+
+
+
+
+// EXERCISE #7
+// Run through the code and return false if at least one element is false;
+// var numbers = [1, true, 54, 'mice', 0];
+
+// var numbers = [1, true, 54, 'mice', 0];
+
+
+
+
+
+// EXERCISE #8
+// Write a some code with comments to explain to me the difference between forEach and map;
+
+// .map is different from forEach in that it can actually change the original array. For example...
+
+
+// forEach example:
+
+// var dinner = ['appetizer', 'main course', 'dessert'];
+
+// dinner.forEach(function(courses){
+//   return dinner.toUpperCase;
+// });
+
+// console.log(dinner);
+
+// .map example:
+
+// var dinner = ['appetizer', 'main course', 'dessert'];
+
+// var result = dinner.map(function(courses) {
+//   return courses.toUpperCase();
+// });
+
+// console.log(result);
+
