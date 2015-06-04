@@ -1,0 +1,9 @@
+<%= @hotel.name %>
+
+<%= link_to 'Add review', new_hotel_review_path(@hotel) %>
+
+
+<% @hotel.reviews.each do |review| %>
+  <p>review was created <%= time_ago_in_words(review.created_at) %> ago</p>
+  <p><%= review.description %></p>
+<% end %>
