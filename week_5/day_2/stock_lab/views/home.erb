@@ -1,0 +1,9 @@
+<form action="/" method="get">
+  <label for="symbol">SYMBOL</label>
+  <input type="text" name="symbol" placeholder="Enter stock symbol">
+  <input class="submit" type="submit">
+  </form> 
+
+<% if @result %>
+<p>Current trading for <%= @symbol %> is $<%= @trade_price %>.</p>
+<% end %>

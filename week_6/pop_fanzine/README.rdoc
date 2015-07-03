@@ -1,0 +1,16 @@
+== README
+
+Pop Fanzine
+
+Create a Rails app for a pop-band fan club. Have pages for each member of the band, their tour dates, image gallery.
+
+create new rails project
+generate controller
+think about pages - for a 'Beatles' fanzine, we might have the following: home john paul george ringo bibliography gallery
+add actions to controller
+add routes (and root route)
+create view files
+add content to views
+add navigation to layout
+remove public/index.html
+some style with CSS :-)

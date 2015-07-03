@@ -1,0 +1,33 @@
+.center-text {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+    border: 1px solid red;
+}
+
+.background-video {
+    position: absolute;
+    z-index: 2;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 1;
+}
+
+.header-text {
+    /*position: absolute;*/
+    margin: 0 auto;
+    z-index: 999999;
+}
+
+
+#backgroundVideo {
+    position: absolute;
+    min-width: 100%; 
+    min-height: 100%;
+}

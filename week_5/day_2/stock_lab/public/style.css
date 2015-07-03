@@ -1,0 +1,43 @@
+h1 {
+  margin: 0 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+}
+
+label {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  width: 190px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.submit {
+  border: 0;
+  outline: 0;
+  width: 90px;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+header {
+  margin: 5% 0 3% 0;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
