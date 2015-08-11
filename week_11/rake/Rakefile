@@ -1,0 +1,22 @@
+desc 'this will make your computer have a shower!'
+
+task :shower do
+	puts 'having a shower.. #LA LA LA'	
+end
+
+desc 'make some coffee'
+task :make_coffee, :cups, :drink do |task, args|
+	puts task
+	puts args
+	puts "making #{args[:cups]} cups of #{args[:drink]}"
+end
+
+
+desc 'moves our awesome Gemfile to any Rails project we want'
+task :custom_gemfile, :rails_app_location do |task, args|
+	destination = args[:rails_app_location]
+	source = "#{Dir.pwd}/Gemfile"
+	FileUtils.copy(source, destination)
+end
+
+# /Users/JMah/Desktop/wdi_13/classwork/week_11/rake_test_app
